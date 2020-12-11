@@ -1,21 +1,30 @@
-import React from 'react';
+import React from "react";
 
-import theme from '../../utils/theme'
+import theme from "../../utils/theme";
 
 function Footer(props) {
-
-  const liStyle = Object.assign({}, styles.li)
+  const liStyle = Object.assign({}, styles.li);
   return (
-    <div style={{...styles.container, backgroundColor: theme[props.theme].fourth}} >
-      <p style={styles.p} >© MIT - <span style={{color: '#000'}}>João Pedro</span></p>
-      
-      <ul style={styles.ul} >
-        <li style={liStyle} >
-          <a style={styles.a} href="https://www.github.com/potatosenior/Me">
+    <div
+      style={{
+        ...styles.container,
+        backgroundColor: theme[props.theme].fourth,
+      }}
+    >
+      <p style={styles.p}>
+        © MIT - <span style={{ color: "#000" }}>João Pedro</span>
+      </p>
+
+      <ul style={styles.ul}>
+        <li style={liStyle}>
+          <a
+            style={styles.a}
+            href="https://www.github.com/potatosenior/portfolioAntigo"
+          >
             Código fonte
           </a>
         </li>
-{/*         <li style={liStyle}>
+        {/*         <li style={liStyle}>
           <a style={styles.a} href="https://play.google.com/store/apps/developer?id=Potatosenior">
             Plasytore
           </a>
@@ -32,38 +41,39 @@ function Footer(props) {
 
 const styles = {
   container: {
-    display: 'flex', 
-    flexDirection: 'column', 
-    color: 'white',
+    display: "flex",
+    flexDirection: "column",
+    color: "white",
     /* position: 'absolute', */
     bottom: 0,
-    width: '100%',
-    paddingTop: '4rem',
-    boxShadow: '0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
+    width: "100%",
+    paddingTop: "4rem",
+    boxShadow:
+      "0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
   },
   p: {
-    alignSelf: 'center'
+    alignSelf: "center",
   },
   ul: {
-    listStyleType: 'none',
-    display: 'flex',
+    listStyleType: "none",
+    display: "flex",
     //backgroundColor: 'green',
-    alignItems: 'center',
-    justifyContent: 'space-around',
+    alignItems: "center",
+    justifyContent: "space-around",
   },
   li: {
-    display: 'flex',
-    height: '80%',
-    justifyContent: 'center',
-    alignItems: 'center',
+    display: "flex",
+    height: "80%",
+    justifyContent: "center",
+    alignItems: "center",
     //backgroundColor: 'black',
     //boxShadow: '0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
   },
   a: {
-    textDecoration: 'none',
-    color: 'white',
-    fontSize: 'thin'
-  }
-}
+    textDecoration: "none",
+    color: "white",
+    fontSize: "thin",
+  },
+};
 
 export default Footer;
